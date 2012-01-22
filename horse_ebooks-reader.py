@@ -4,7 +4,6 @@ import time
 api = twitter.Api()
 
 statuses = api.GetUserTimeline('horse_ebooks')
-#subprocess.call(['/usr/bin/say', [s.text for s in statuses]])
 for s in statuses:
 	subprocess.call(['/usr/bin/say','A horse ebooks tweet'])
 	time.sleep(1)
